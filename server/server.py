@@ -2,10 +2,14 @@ from flask import Flask, request, jsonify
 import util
 import os
 from flask_cors import CORS
-app = Flask(__name__)
+app = Flask(__name__, static_folder='./ui', static_url_path='/')
+
 
 CORS(app)
 
+@app.route('/')
+def index():
+    return "Welcome to the Flask app!"
 
 @app.route('/classify_image', methods=['GET', 'POST'])
 def classify_image():
