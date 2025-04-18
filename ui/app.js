@@ -35,9 +35,13 @@ function init() {
       alert("Please upload an image first.");
       return;
     }
-
+    const backendURL =
+      window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1"
+        ? "http://127.0.0.1:5000/classify_image" // Local URL (for localhost and 127.0.0.1)
+        : "https://fameclassify-backend.onrender.com/classify_image"; // Render URL
     $.post(
-      "http://127.0.0.1:5000/classify_image",
+      backendURL,
       { image_data: uploadedImageData },
       function (data, status) {
         if (!data || data.length === 0) {

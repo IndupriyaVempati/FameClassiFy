@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import util
+import os
 from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
@@ -18,4 +19,6 @@ def classify_image():
 if __name__ == "__main__":
     print("Starting Python Flask Server For Celebrity Image Classification")
     util.load_saved_artifacts()
-    app.run(port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+   
