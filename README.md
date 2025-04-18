@@ -24,9 +24,9 @@
 
 ## 🛠️ Tech Stack
 
-| Frontend        | Backend        | Machine Learning        | Deployment         |
-|-----------------|----------------|--------------------------|--------------------|
-| HTML, CSS, JS   | Python, Flask  | scikit-learn / custom model | Render / Localhost |
+| Frontend        | Backend        | Machine Learning                                                      |
+|-----------------|----------------|-----------------------------------------------------------------------|
+| HTML, CSS, JS   | Python, Flask  | SVM (Support Vector Machine) - Chosen based on performance evaluation | 
 
 ---
 
