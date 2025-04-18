@@ -1,6 +1,7 @@
 
+## 🚀 Overview
 
-# 🌟 FameClassiFy
+**FameClassiFy** is a web-based application that lets users upload an image and classifies the celebrity present in the image using a pre-trained machine learning model. It combines the power of Python, Flask, and frontend tech to deliver quick and accurate predictions.
 
 > Celebrity Image Classifier built with Flask, HTML, CSS, and a Machine Learning model.
 
@@ -11,15 +12,14 @@
 
 
 
+![image](https://github.com/user-attachments/assets/4b55443a-3c43-44cb-ba7b-c9431ec28d3d)
 
 
 
 
 
 
-## 🚀 Overview
 
-**FameClassiFy** is a web-based application that lets users upload an image and classifies the celebrity present in the image using a pre-trained machine learning model. It combines the power of Python, Flask, and frontend tech to deliver quick and accurate predictions.
 
 
 
